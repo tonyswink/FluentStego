@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="FluentStegoApp.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FluentStegoApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="32">
+            <Border Background="#1A1A1A" CornerRadius="16" Padding="32">
+                <StackPanel Spacing="16" HorizontalAlignment="Center">
+                    <FontIcon Glyph="&#xE72E;" FontSize="48" Foreground="#4FC3F7" HorizontalAlignment="Center"/>
+                    <TextBlock Text="FluentStego" FontSize="32" FontWeight="Bold" Foreground="#FFF" HorizontalAlignment="Center"/>
+                    <TextBlock Text="A steganography tool for Windows 11 to hide messages and files in images." FontSize="18" Foreground="#CCC" TextAlignment="Center"/>
+                    <Border Height="1" Background="#333" Margin="0,8"/>
+                    <TextBlock Text="Created with ❤️ by" FontSize="16" Foreground="#AAA" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="8">
+                        <FontIcon Glyph="&#xE77B;" FontSize="20" Foreground="#4FC3F7"/>
+                        <HyperlinkButton Content="@tonyswink" NavigateUri="https://github.com/tonyswink" Foreground="#4FC3F7" FontSize="20" Padding="0" Margin="0 -5 0 0"/>
+                    </StackPanel>
+                    <TextBlock Text="Open Source on GitHub" FontSize="14" Foreground="#AAA" HorizontalAlignment="Center"/>
+                    <HyperlinkButton Content="github.com/tonyswink/FluentStego" NavigateUri="https://github.com/tonyswink/FluentStego" Foreground="#4FC3F7" FontSize="14" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

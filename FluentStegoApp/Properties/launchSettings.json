@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FluentStegoApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FluentStegoApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
