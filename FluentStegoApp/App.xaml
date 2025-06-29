@@ -8,7 +8,6 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
-                <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Light">
@@ -27,6 +26,10 @@
                     <SolidColorBrush x:Key="GalleryBorderBrush" Color="{ThemeResource SystemColorWindowColor}" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
+            
+            <!-- Application resources -->
+            <x:String x:Key="AppTitleName">FluentStego</x:String>
+            
             <SolidColorBrush x:Key="CardBackgroundBrush" Color="#1F1F1F"/>
         </ResourceDictionary>
     </Application.Resources>
