@@ -24,7 +24,7 @@ namespace FluentStegoApp
 
             // Extend content into the title bar and set custom draggable region
             this.ExtendsContentIntoTitleBar = true;
-            this.SetTitleBar(AppTitleBar);
+            //this.SetTitleBar(AppTitleBar);
 
             // Set up Mica backdrop
             if (MicaController.IsSupported())
@@ -42,6 +42,17 @@ namespace FluentStegoApp
             // Default to Encode page
             MainFrame.Navigate(typeof(Pages.EncodePage));
             nvMenu.SelectedItem = nvMenu.MenuItems[0]; // Select the Encode tab
+
+            this.Closed += MainWindow_Closed;
+        }
+
+        private void MainWindow_Closed(object sender, WindowEventArgs args)
+        {
+            if (micaController != null)
+            {
+                micaController.RemoveSystemBackdropTarget(this.As<ICompositionSupportsSystemBackdrop>());
+                micaController.Dispose();
+            }
         }
 
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -60,7 +71,7 @@ namespace FluentStegoApp
                         MainFrame.Navigate(typeof(AboutPage));
                         break;
                     case "settings":
-                        //MainFrame.Navigate(typeof(SettingsPage));
+                        MainFrame.Navigate(typeof(SettingsPage));
                         break;
                 }
             }

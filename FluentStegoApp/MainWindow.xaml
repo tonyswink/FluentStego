@@ -37,9 +37,9 @@
                 </NavigationViewItem>
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
-                <NavigationViewItem Content="About" Tag="about">
+                <NavigationViewItem Content="Settings" Tag="settings">
                     <NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xE897;" />
+                        <FontIcon Glyph="&#xE713;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.FooterMenuItems>
