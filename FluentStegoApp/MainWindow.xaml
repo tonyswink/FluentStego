@@ -13,12 +13,12 @@
         <MicaBackdrop />
     </Window.SystemBackdrop>
     <Grid>
-        <Border x:Name="AppTitleBar" Height="56" VerticalAlignment="Top">
+        <!--<Border x:Name="AppTitleBar" Height="56" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Height="56" Margin="24,0">
                 <FontIcon Glyph="&#xE72E;" FontSize="24" Margin="0,0,12,0"/>
                 <TextBlock Text="FluentStego" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
             </StackPanel>
-        </Border>
+        </Border>-->
         <NavigationView x:Name="nvMenu"
                         PaneDisplayMode="Top"
                         SelectionChanged="NavigationView_SelectionChanged"
